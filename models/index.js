@@ -12,4 +12,4 @@ Post.hasMany(User, {
 });
 
 // Module export the objects
-module.exports = { User, Post };
+module.exports = { User, Post, Comment };

@@ -20,5 +20,6 @@ const commentdata = [
     content: "I bought $100 worth of Doge coins",
   },
 ];
-const seedComment = () => Comment.bulkCreate(commentdata);
-module.exports = seedComment;
+const seedComments = () => Comment.bulkCreate(commentdata);
+
+module.exports = seedComments;

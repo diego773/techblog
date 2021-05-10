@@ -14,7 +14,7 @@ Comment.init(
       autoIncrement: true,
     },
     content: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: true,
     },
   },

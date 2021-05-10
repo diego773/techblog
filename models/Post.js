@@ -17,8 +17,8 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    comment: {
-      type: DataTypes.STRING,
+    content: {
+      type: DataTypes.TEXT,
     },
   },
   {

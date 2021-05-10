@@ -17,6 +17,10 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     comment: {
       type: DataTypes.TEXT,
     },

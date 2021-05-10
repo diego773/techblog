@@ -5,7 +5,7 @@ const sequelize = require("../config/connection");
 class Post extends Model {}
 
 // This will let the user put their title and comment
-Project.init(
+Post.init(
   {
     id: {
       type: DataTypes.INTEGER,

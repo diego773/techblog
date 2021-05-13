@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: var(--bright);
+  color: var(black);
   text-decoration: none;
 }
 

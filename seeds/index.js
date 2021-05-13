@@ -6,6 +6,7 @@ const seedUser = require("./userData");
 // Const seed all using async, await sequelize
 // Force and process
 const seedAll = async () => {
+  await sequelize.query("SET FOREIGN_KEY_CHECKS = 0");
   await sequelize.sync({ force: true });
 
   await seedComment();

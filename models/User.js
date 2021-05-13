@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 
 // Creating class for User
 class User extends Model {
+  // this checks each users password
   checkPassword(loginPw) {
     return bcrypt.compareSync(loginPw, this.password);
   }

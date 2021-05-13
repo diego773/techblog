@@ -1,0 +1,11 @@
+<section class="card">
+    <a href="/comment/{{id}}">
+        <header>{{title}}
+    </a></header>
+
+    <div class="comment-details">
+        <h3>{{comment.title}}</h3>
+        <p>Posted by: {{comment.username}}</p>
+        <p>Comment: {{ format_date comment.created_date}}</p>
+    </div>
+</section>

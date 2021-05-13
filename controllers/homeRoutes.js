@@ -7,14 +7,14 @@ router.get("/", async (req, res) => {
     const dbPostData = await Post.findAll({
       include: [
         {
-          model: Post,
-          attributes: ["id", "title", "username", "post_date", "comment"],
+          model: User,
+          attributes: ["id", "username"],
         },
       ],
     });
     const post = dbPostData.map((post) => post.get({ plain: true }));
     res.render("homepage", {
-      posts,
+      post,
     });
   } catch (err) {
     console.log(err);

@@ -60,7 +60,7 @@ router.post("/", async (req, res) => {
 
 router.get("/dashboard", async (req, res) => {
   try {
-    res.render("dashboard");
+    res.render("add-post");
   } catch (err) {
     res.status(500).json(err);
   }

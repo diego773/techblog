@@ -3,6 +3,7 @@ async function newFormHandler(event) {
   const title = document.querySelector("#title").value;
   const comment = document.querySelector("#comment").value;
 
+  console.log(comment, title);
   // Send fetch request to add a new post
   const response = await fetch(`/api/post`, {
     method: "POST",
@@ -22,6 +23,4 @@ async function newFormHandler(event) {
   }
 }
 
-document
-  .querySelector(".edit-post-form")
-  .addEventListener("submit", newFormHandler);
+document.querySelector(".add-post").addEventListener("submit", newFormHandler);
